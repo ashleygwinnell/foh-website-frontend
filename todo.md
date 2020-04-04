@@ -16,6 +16,7 @@ WEB FRONT END:
 [done] - fix press kit game pages
 [done] - blog page title
 [done] - fix blog loading bar not hiding away
+- keywords from blog posts into head
 
 BACK END:
 - integrate into php site

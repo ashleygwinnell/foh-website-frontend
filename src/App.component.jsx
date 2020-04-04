@@ -26,6 +26,7 @@ import Terms from './pages/Terms.component.jsx'
 import Privacy from './pages/Privacy.component.jsx'
 import Cookies from './pages/Cookies.component.jsx'
 import MailingList from './pages/MailingList.component.jsx'
+import WeLoveYou from './pages/WeLoveYou.component.jsx'
 import Links from './pages/Links.component.jsx'
 import PageNotFound from './pages/parts/PageNotFound.component.jsx'
 
@@ -44,7 +45,7 @@ class App extends React.Component {
 
     	return (<div id='app'>
         			<Helmet>
-		                <title>{__SITE_NAME}</title>
+        				<title>{__SITE_NAME}</title>
 				        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 				        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
@@ -75,6 +76,7 @@ class App extends React.Component {
 								<Route path="/privacy" component={Privacy} />
 								<Route path="/cookies" component={Cookies} />
 								<Route path="/mailing-list" component={MailingList} />
+								<Route path={["/we-love-you", "/thanks", "/love"]} component={WeLoveYou} />
 								<Route component={PageNotFound}/>
 							</Switch>
 

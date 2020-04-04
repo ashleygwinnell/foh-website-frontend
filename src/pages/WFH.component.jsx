@@ -9,6 +9,11 @@ import Game from "./game/Game.component.jsx";
 
 import WFHData from '../config/WFH.js'
 
+// TODO:
+// Early Man Run / Aardman / HTML5 Phaser
+// Fire in The Booth / Auroch Digital & BBC / HTML5 Phaser
+// Bottom Knocker Street / Opposable Games / Unity
+
 class WFH extends React.Component {
     render() {
     	return (<Page>
