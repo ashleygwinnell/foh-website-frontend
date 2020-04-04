@@ -1,0 +1,37 @@
+
+@font-face {
+    font-family: "Open Sans Light";
+    src: url("opensans-light/OpenSans-Light.eot");
+    src: url("opensans-light/OpenSans-Light.eot?#iefix") format('embedded-opentype'),
+         url("opensans-light/OpenSans-Light.woff") format("woff"),
+         url("opensans-light/OpenSans-Light.ttf") format("truetype"),
+         url("opensans-light/OpenSans-Light.svg#OpenSans-Light") format("svg");
+    font-weight:100;
+    font-style:normal; 
+
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('opensans/OpenSans-Regular-webfont.eot');
+    src: url('opensans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans/OpenSans-Regular-webfont.woff') format('woff'),
+         url('opensans/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('opensans/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('bebas-neue/BebasNeue-webfont.eot');
+    src: url('bebas-neue/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('bebas-neue/BebasNeue-webfont.woff') format('woff'),
+         url('bebas-neue/BebasNeue-webfont.ttf') format('truetype'),
+         url('bebas-neue/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
