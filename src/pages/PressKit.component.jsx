@@ -30,11 +30,11 @@ class PressKit extends React.Component {
 	 	this.setState({loading:false});
 	}
 	componentDidUpdate(prevProps, prevState) {
-		console.log('componentDidUpdate', this.props, this.state);
+		// console.log('componentDidUpdate', this.props, this.state);
 		this.updateGame();
 	}
 	updateGame() {
-		
+
 	}
 	componentWillUnmount() {
 		// this.state;

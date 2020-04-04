@@ -26,6 +26,7 @@ import Terms from './pages/Terms.component.jsx'
 import Privacy from './pages/Privacy.component.jsx'
 import Cookies from './pages/Cookies.component.jsx'
 import MailingList from './pages/MailingList.component.jsx'
+import Links from './pages/Links.component.jsx'
 import PageNotFound from './pages/parts/PageNotFound.component.jsx'
 
 class App extends React.Component {
@@ -52,30 +53,37 @@ class App extends React.Component {
 				        <meta name='keywords' content='Force Of Habit, Ashley Gwinnell, indie game studio, experimental game design, audio design, web services' />
 		            </Helmet>
 
-		            <MailingListModal />
-        			<Header/>
+		            <Switch>
+		            	<Route path={["/hello", "/links", "/welcome"]} component={Links} />
+		            	<Route>
+		            		<MailingListModal />
+		        			<Header/>
 
-        			<Route path="/" component={Analytics} />
+		        			<Route path="/" component={Analytics} />
 
-        			<Switch>
-	        			<Route exact path="/" render={(props)=><Home app={this} {...props} /> } />
-						<Route path="/games" component={Games}/>
-						<Route path="/wfh" component={WFH}/>
-						<Route path="/services" component={WFH}/>
-						<Route path="/about" component={About} />
-						<Route path="/blog" component={Blog} />
-						<Route exact path="/press/:game" component={PressKit} />
-						<Route exact path="/press" component={PressKit} />
-						<Route path="/contact" component={Contact} />
-						<Route path="/terms" component={Terms} />
-						<Route path="/privacy" component={Privacy} />
-						<Route path="/cookies" component={Cookies} />
-						<Route path="/mailing-list" component={MailingList} />
-						<Route component={PageNotFound}/>
-					</Switch>
+		        			<Switch>
+			        			<Route exact path="/" render={(props)=><Home app={this} {...props} /> } />
+								<Route path="/games" component={Games}/>
+								<Route path="/wfh" component={WFH}/>
+								<Route path="/services" component={WFH}/>
+								<Route path="/about" component={About} />
+								<Route path="/blog" component={Blog} />
+								<Route exact path="/press/:game" component={PressKit} />
+								<Route exact path="/press" component={PressKit} />
+								<Route path="/contact" component={Contact} />
+								<Route path="/terms" component={Terms} />
+								<Route path="/privacy" component={Privacy} />
+								<Route path="/cookies" component={Cookies} />
+								<Route path="/mailing-list" component={MailingList} />
+								<Route component={PageNotFound}/>
+							</Switch>
 
-					<Footer/>
-					<CookieWarning/>
+							<Footer/>
+							<CookieWarning/>
+		            	</Route>
+		            </Switch>
+
+
         		</div>);
     }
 }
