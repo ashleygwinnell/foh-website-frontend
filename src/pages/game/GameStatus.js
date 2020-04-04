@@ -1,0 +1,8 @@
+const GameStatus = {
+	RELEASED: "RELEASED",
+	RELEASED_BETA: "RELEASED (EARLY ACCESS)",
+	MINI: "MINI RELEASE",
+	EXPERIMENT: "EXPERIMENT",
+
+};
+export default GameStatus;

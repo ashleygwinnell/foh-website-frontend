@@ -1,0 +1,8 @@
+.DS_Store
+*/.DS_Store
+.dropbox
+.dropbox.attr
+public/
+.babelrc
+package-lock.json
+node_modules
