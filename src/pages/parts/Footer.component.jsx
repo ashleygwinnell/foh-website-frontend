@@ -14,7 +14,7 @@ class Footer extends React.Component {
 								</div>
 								<div className='span4'>
 									<p className='footer' align='right'>Visual Identity by <a href='https://www.damoncharles.com/' target='new'>Damon Charles</a><br/>
-									<small>Made with <a href='https://reactjs.org/' target='new'>React</a> &amp; <a href='https://redux.js.org/' target='new'>Redux</a> &hearts; (<a href='https://github.com/ashleygwinnell' target='new'>Source</a>)</small></p>
+									<small>Made with <a href='https://reactjs.org/' target='new'>React</a> &amp; <a href='https://redux.js.org/' target='new'>Redux</a> &hearts; (<a href='https://github.com/ashleygwinnell/foh-website-frontend' target='new'>Source</a>)</small></p>
 								</div>
 							</footer>
 						</div>
