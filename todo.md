@@ -23,18 +23,18 @@ BACK END:
 - publish on github?
 
 LATER:
+- svg logo?
+- fixed to window/scroll header
+- widgets in blog posts e.g. {% downloadbutton game:the-agent platform:mac %}
 [meh] - fix all console errors
 	[Violation] 'click' handler took 168ms ?
 	[Uncaught TypeError:] Parameter 'url' must be a string, not object
 - rewrite css/scss/styled react components
-- widgets in blog posts e.g. {% downloadbutton game:the-agent platform:mac %}
 - refactor so it's tidyier (e.g. enums/consts folder)
 - carousel main/title banner?
 - carousel main/latest project box.
 - carousel last tweets
 - add 'services' box / rename client work/wfh. (update wfh / services page)
-- svg logo?
-- fixed to window/scroll header
 - typechecking with prop-types :: https://reactjs.org/docs/typechecking-with-proptypes.html
 - Jest/jasmine/unit testing
 - Normalizer library if needed.

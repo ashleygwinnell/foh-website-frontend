@@ -32,10 +32,14 @@ const Game_TheAgent = {
 		}
 	],
 	buttons: [
+		// {
+		// 	text: "Download Unavailable",
+		// 	url: "",
+		// 	type: "disabled"
+		// }
 		{
-			text: "Download Unavailable",
-			url: "",
-			type: "disabled"
+			text: "Play Online",
+			url: "https://gamejolt.com/games/the-agent-glory-to-moscow/482603"
 		}
 	],
 	assets: {

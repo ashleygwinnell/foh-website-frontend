@@ -27,10 +27,14 @@ const Game_AlienLaserBunnies = {
 
 	],
 	buttons: [
+		// {
+		// 	text: "Download Unavailable",
+		// 	url: "",
+		// 	type: "disabled"
+		// }
 		{
-			text: "Download Unavailable",
-			url: "",
-			type: "disabled"
+			text: "Play Online",
+			url: "https://gamejolt.com/games/alien-laser-bunnies/482589"
 		}
 	],
 	assets: {
