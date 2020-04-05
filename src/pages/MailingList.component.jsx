@@ -13,12 +13,10 @@ import { connect } from 'react-redux'
 
 class MailingList extends React.Component {
 	componentDidMount() {
-		// resetNewsletter();
-		// showNewsletterImmediate();
 		this.props.showMailingList();
 	}
 	showNewsletter() {
-		// mailing-list
+
 	}
     render() {
     	return (<Page>

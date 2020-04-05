@@ -3,14 +3,9 @@ import PropTypes from 'prop-types'
 
 import { NProgress } from '@tanem/react-nprogress'
 
-// let BarID = 1;
 class LoadingBar extends React.Component {
 	constructor(props) {
 		super(props);
-		// this.state = {
-		// 	id: BarID
-		// };
-		// BarID++;
 	}
 	componentDidMount() {
 
@@ -38,12 +33,6 @@ class LoadingBar extends React.Component {
     	};
 	}
 	render() {
-		// if (this.props.loaded) {
-		// 	setTimeout(()=>{
-
-		// 	})
-		// }
-		//console.log(this.props);
 		return <NProgress isFinished={this.props.loaded} isAnimating={this.props.loading}>
 				    {({ animationDuration, isFinished, progress }) => {
 				    	//console.log(this.state.id, animationDuration, isFinished, progress)

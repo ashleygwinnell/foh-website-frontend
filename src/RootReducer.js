@@ -1,10 +1,4 @@
 
-
-// const RootReducer = combineReducers({
-//   app: AppReducer,
-//   blog: BlogReducer
-// })
-
 import AppReducer from './AppReducer.js'
 import BlogReducer from './pages/blog/BlogReducer.js'
 import { Reducer as MailingListReducer } from './pages/mailing-list/Reducer.js'

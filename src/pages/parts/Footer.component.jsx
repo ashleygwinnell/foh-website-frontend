@@ -25,6 +25,3 @@ class Footer extends React.Component {
     }
 }
 export default Footer
-
-
-//<? include_once("pages/parts/footer-cookies.phtml");?>

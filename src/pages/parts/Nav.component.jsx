@@ -15,7 +15,7 @@ class Nav extends React.Component {
 	}
     render(){
         return (<div id='nav'>
-        			<nav className='span7 hidden-phone'>
+        			<nav className='span8 hidden-phone'>
 						<NavLink exact to="/" activeClassName="selected">HOME</NavLink>
 						<NavLink to="/games" activeClassName="selected">GAMES</NavLink>
 						<NavLink to="/wfh" activeClassName="selected">CLIENT WORK</NavLink>

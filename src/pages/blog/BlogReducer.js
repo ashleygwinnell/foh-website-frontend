@@ -18,7 +18,6 @@ const initialBlogState = {
 	pressReleases: []
 }
 function BlogReducer(state = initialBlogState, action) {
-	//console.log(action);
 
 	switch (action.type)
 	{

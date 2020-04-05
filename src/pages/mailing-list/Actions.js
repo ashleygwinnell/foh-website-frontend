@@ -23,10 +23,9 @@ export const submitMailingList = (name, email) => {
 			type: Actions.SUBMIT
 		});
 
-		var url = "/mailing-list/subscribe/?name=" + encodeURIComponent(name) + "&email=" + encodeURIComponent(email);
+		var url = __API_HOST + "/api/mailing-list/subscribe/?name=" + encodeURIComponent(name) + "&email=" + encodeURIComponent(email);
 		return APIHelper.request(url)
 				.then((response) => {
-					// console.log(response);
 					if (response.data == true) {
 						return dispatch(submitMailingListSuccess());
 					}

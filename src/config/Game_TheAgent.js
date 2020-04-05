@@ -21,8 +21,7 @@ const Game_TheAgent = {
 		]
 	},
 	platforms: [
-		//{ type: GameStore.MAC, url: "/download/game/the-agent-glory-to-moscow/?os=mac" },
-		//{ type: GameStore.WINDOWS, url: "/download/game/the-agent-glory-to-moscow/?os=windows" }
+
 	],
 	links: [
 		{
@@ -32,11 +31,6 @@ const Game_TheAgent = {
 		}
 	],
 	buttons: [
-		// {
-		// 	text: "Download Unavailable",
-		// 	url: "",
-		// 	type: "disabled"
-		// }
 		{
 			text: "Play Online",
 			url: "https://gamejolt.com/games/the-agent-glory-to-moscow/482603"

@@ -25,14 +25,6 @@ class Contact extends React.Component {
 						<div className='container'>
 							<div className='row'>
 								<div className='span12' >
-									{/*<h2 className='pretitle'>IF YOU:</h2>
-									<ul>
-										<li><p className='bigger'>Enjoyed one of our games?</p></li>
-										<li><p className='bigger'>Want to collaborate on an awesome idea?</p></li>
-										<li><p className='bigger'>Are looking for a quote on some HTML5 or native game prototyping?</p></li>
-									</ul>
-									<p className='bigger'>We want to hear from you! &lt;3</p><br/>
-									*/}
 									<h2 className='pretitle'>HERE'S HOW:</h2>
 									<a className='download-button-a' href='mailto:contact@forceofhab.it' target='new'>
 										<div className='download-button mailinglist-button'>

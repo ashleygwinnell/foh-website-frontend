@@ -15,15 +15,6 @@ class Privacy extends React.Component {
 		super(props);
 
 		this.privacy = PrivacyMD;
-		// %PERSONAL_INFORMATION%
-		// %SDKS%
-		// foreach($privacySDKs as $name => $url) {
-		// 	$sdkList .= "<li><a href='" . $url. "' target='new'>" . $name . "</a></li>\n";
-		// }
-
-		// this.privacy.replace("%PERSONAL_INFORMATION%", implode(",", $privacyData), $md);
-		// this.privacy.replace("%SDKS%", $sdkList, $md);
-		// privacySDKs
 	}
     render() {
     	return (<Page>

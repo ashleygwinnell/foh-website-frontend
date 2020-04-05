@@ -9,19 +9,18 @@ import GamesData from '../../config/Games.js'
 class PressKit_Game extends React.Component {
 	constructor(props) {
 		super(props);
-		
+
 		let game;
 		let valid = false;
  		const games = GamesData.filter((game) => game.nameSafe == this.props.game);
  		if (games.length > 0) {
-			// console.log(games[0]);
 
 			if (games[0].press != null) { // must have press data  to  be in the press kit...
 				game = games[0];
 				valid = true;
 			}
- 		
-	 	} 
+
+	 	}
 
 		this.state = {
 			game: game,

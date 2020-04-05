@@ -42,7 +42,13 @@ class BlogPost extends React.Component {
 		const post = this.props.post;
 
 		return (<div key={(post != null)?post.timestamp:0} className='post blogpost'>
-					{!this.props.preview && post != null && <Helmet><title>{__SITE_NAME} - Blog - {post.title}</title></Helmet>}
+					{!this.props.preview && post != null &&
+						<Helmet>
+							<title>{__SITE_NAME} - Blog - {post.title}</title>
+							<meta name="description" lang="en" content={"Force Of Habit - Blog - " + post.title} />
+							<meta name='keywords' content={"Force Of Habit, Ashley Gwinnell, indie game studio, experimental game design, audio design, web services," + post.meta_keywords} />
+						</Helmet>
+					}
 					{post != null &&
 						<div>
 							<h2 className="pretitle">{this.formatTime(post.timestamp)}</h2>

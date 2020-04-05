@@ -427,6 +427,28 @@ nav a {
   text-align: center;
   vertical-align: middle;
 }
+.top-banner .carousel-arrow {
+  float:left;
+  padding-left:28px;
+  padding-right:28px;
+  padding-top:130px;
+  padding-bottom:130px;
+  font-size:36px;
+  cursor:pointer;
+  font-weight:bold;
+  color:white;
+  text-decoration: none;
+}
+.top-banner .carousel-arrow:hover {
+  color:#d9ff7c;
+  font-size:40px;
+}
+.top-banner .carousel-arrow.left {
+  float:left;
+}
+.top-banner .carousel-arrow.right {
+  float:right;
+}
 @media (min-width: 1200px) {
   .top-banner .text {
     height: 280px;
@@ -436,11 +458,16 @@ nav a {
   .top-banner .text {
     height: 240px;
   }
+  .top-banner .carousel-arrow {
+    padding-top:110px;
+    padding-bottom:110px;
+  }
 }
 @media (max-width: 767px) {
   .top-banner .text {
     height: 200px;
   }
+  .top-banner .carousel-arrow{ display:none; }
 }
 @media (min-width: 1200px) {
   .top-banner {

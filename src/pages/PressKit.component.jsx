@@ -30,7 +30,6 @@ class PressKit extends React.Component {
 	 	this.setState({loading:false});
 	}
 	componentDidUpdate(prevProps, prevState) {
-		// console.log('componentDidUpdate', this.props, this.state);
 		this.updateGame();
 	}
 	updateGame() {
@@ -83,20 +82,4 @@ class PressKit extends React.Component {
     }
 }
 
-
-// ... computed data from state and optionally ownProps
-// const mapStateToProps = (state, ownProps) =>{
-// 	// const p = GamesData[ownProps.game]
-// 	const game = GamesData.filter(game => game.nameSafe == this.props.match.params.game);
-
-// 	const c = {
-// 		game: game
-// 	};
-// 	//console.log('mapStateToProps', state, ownProps);
-// 	//console.log(state.blog.meta.loading, p);
-// 	//console.log('result', c);
-// 	return c;
-// }
-
-//export default connect()(PressKit);
 export default PressKit;

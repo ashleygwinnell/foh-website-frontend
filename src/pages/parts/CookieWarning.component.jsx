@@ -11,11 +11,7 @@ class CookieWarning extends React.Component {
 		return window.localStorage.closedCookieWarning != "true";
 	}
 	closeCookieWarning() {
-		//console.log('close cookie warning', this);
 		window.localStorage.closedCookieWarning = "true";
-		// this.setState((state, props) => ({
-		// 	visible:false
-		// }));
 		this.setState({ visible:false });
 	}
 	componentDidMount() {
@@ -27,7 +23,6 @@ class CookieWarning extends React.Component {
 
 	}
     render(){
-    	// console.log('rendering', this.state.visible);
     	if (!this.state.visible) {
 	    	return null;
 		}

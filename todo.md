@@ -16,22 +16,16 @@ WEB FRONT END:
 [done] - fix press kit game pages
 [done] - blog page title
 [done] - fix blog loading bar not hiding away
-- keywords from blog posts into head
-
-BACK END:
-- integrate into php site
+[done] - carousel main/title banner?
+[done] - images served from backend.
+[done] - keywords from blog posts into head.
+[done] - integrate into php site
 - publish on github?
+- publish to web
 
 LATER:
-- svg logo?
+- svg logo
 - fixed to window/scroll header
-- widgets in blog posts e.g. {% downloadbutton game:the-agent platform:mac %}
-[meh] - fix all console errors
-	[Violation] 'click' handler took 168ms ?
-	[Uncaught TypeError:] Parameter 'url' must be a string, not object
-- rewrite css/scss/styled react components
-- refactor so it's tidyier (e.g. enums/consts folder)
-- carousel main/title banner?
 - carousel main/latest project box.
 - carousel last tweets
 - add 'services' box / rename client work/wfh. (update wfh / services page)

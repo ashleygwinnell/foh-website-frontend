@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import ReactGA from 'react-ga';
 
-ReactGA.initialize('UA-34600531-1');
+ReactGA.initialize(__GA_ID);
 
 class Analytics extends React.Component {
 	constructor(props) {

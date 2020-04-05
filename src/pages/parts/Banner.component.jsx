@@ -4,27 +4,57 @@ import React from 'react';
 class Banner extends React.Component {
 	constructor(props) {
 		super(props);
+		this.state = {
+			index: 0
+		};
 		this.options = [
+			// {
+			// 	text: "\"All Things Game Feel\" talk now on YouTube!"
+			// },
 			{
-				text: "Neon Caves & Toast Time out now on Nintendo Switch!"
+				text: "Neon Caves out now on <a href='https://www.nintendo.co.uk/Games/Nintendo-Switch-download-software/Neon-Caves-1528050.html' target='new'>Nintendo Switch</a>!"
 			},
 			{
-				text: "Force Of Habit is an indie games boutique."
+				text: "Toast Time: Smash Up! out now on <a href='https://www.nintendo.com/games/detail/toast-time-smash-up-switch/' target='new'>Nintendo Switch</a>!"
+			},
+			{
+				text: "An experiment-driven indie games studio!"
 			}
 		];
+
+		this.interval = setInterval(()=>{
+			this.goRight();
+		},6000);
 	}
 
+	componentWillUnmount() {
+		clearInterval(this.interval);
+	}
+
+	goLeft() {
+		var i = this.state.index - 1;
+		if (i < 0) {
+			i = this.options.length - 1;
+		}
+		this.setState({index: i});
+	}
+	goRight() {
+		var i = (this.state.index + 1) % this.options.length;
+		this.setState({index: i});
+	}
 	getContent() {
-		return this.options[0].text;
+		return this.options[this.state.index].text;
 	}
     render(){
     	return (<div className='top-banner top'>
-			<div className='container squash'>
-				<div className='text'>
-					<h1>{this.getContent()}</h1>
-				</div>
-			</div>
-		</div>);
+    				{this.options.length > 1 && <a className='carousel-arrow left' href="" onClick={()=>{clearInterval(this.interval); this.goLeft();}}>&lt;</a>}
+    				{this.options.length > 1 && <a className='carousel-arrow right' href="" onClick={()=>{clearInterval(this.interval); this.goRight(); }}>&gt;</a>}
+					<div className='container squash'>
+						<div className='text'>
+							<h1 dangerouslySetInnerHTML={{__html: this.getContent()}}></h1>
+						</div>
+					</div>
+				</div>);
     }
 }
 

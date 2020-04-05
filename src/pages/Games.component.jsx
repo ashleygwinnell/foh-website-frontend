@@ -11,10 +11,6 @@ import GameStatus from "./game/GameStatus.js";
 import GamesData from '../config/Games.js'
 
 import { connect } from 'react-redux'
-//import { setLoading } from '../AppActions.js'
-
-//import { VariableSizeList as List } from 'react-window';
-//import { List, WindowScroller } from 'react-virtualized';
 
 // More components
 const GameFilterView = {
@@ -35,7 +31,7 @@ class Games extends React.Component {
         }
     }
     componentDidMount() {
-        //this.props.setLoading();
+
     }
     componentWillUnmount() {
 

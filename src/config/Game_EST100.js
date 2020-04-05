@@ -22,11 +22,6 @@ const Game_EST100 = {
 
 	],
 	buttons: [
-		// {
-		// 	text: "Download Unavailable",
-		// 	url: "",
-		// 	type: "disabled"
-		// }
 		{
 			text: "Download on Game Jolt",
 			url: "https://gamejolt.com/games/est-100/80931"

@@ -10,7 +10,7 @@ class Header extends React.Component {
 						<div className="row">
 							<div className="span12">
 								<header className='row'>
-						  			<div className='span5'>
+						  			<div className='span4'>
 						  				<div className='logo'><a href='/'><img src='/_images/logo.png' alt='Force Of Habit' title='Force Of Habit' /></a></div>
 						  			</div>
 						  			<Nav></Nav>

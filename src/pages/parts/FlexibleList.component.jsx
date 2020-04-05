@@ -18,7 +18,6 @@ class FlexibleList extends React.Component {
         };
 	}
 	componentDidMount() {
-        //this.props.setLoading();
         window.addEventListener('scroll', this.scrollEvent, false);
     }
     componentWillUnmount() {

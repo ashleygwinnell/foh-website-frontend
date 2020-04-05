@@ -8,9 +8,6 @@ class BlogPostList extends React.Component {
 		super(props);
 	}
     render(){
-    	//console.log("blog post list");
-    	//console.log(this);
-
     	var listTitle = "All Posts";
     	var listItems = Object.keys(this.props.posts).map((key, index) => {
     		const post = this.props.posts[key];

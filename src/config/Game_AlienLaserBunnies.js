@@ -20,18 +20,12 @@ const Game_AlienLaserBunnies = {
 		]
 	},
 	platforms: [
-		//{ type: GameStore.MAC, url: "/download/game/alien-laser-bunnies/?os=mac" },
-		//{ type: GameStore.WINDOWS, url: "/download/game/alien-laser-bunnies/?os=windows" }
+
 	],
 	links: [
 
 	],
 	buttons: [
-		// {
-		// 	text: "Download Unavailable",
-		// 	url: "",
-		// 	type: "disabled"
-		// }
 		{
 			text: "Play Online",
 			url: "https://gamejolt.com/games/alien-laser-bunnies/482589"

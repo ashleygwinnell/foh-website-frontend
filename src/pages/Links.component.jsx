@@ -5,9 +5,6 @@ import { NavLink } from 'react-router-dom';
 
 import HeaderMini from './parts/HeaderMini.component.jsx'
 import Page from './parts/Page.component.jsx'
-/*<style>
-    h3, p { text-align: center; }
-</style>*/
 
 class Links extends React.Component {
 	constructor(props) {
@@ -47,7 +44,7 @@ class Links extends React.Component {
 
                                     <p><i>{this.getLine()}</i><br/><br/></p>
 
-                                    {/*<p><i>&copy; Force Of Habit</i><br/><br/></p>*/}
+                                    {<p><i>&copy; Force Of Habit</i><br/><br/></p>}
 
                                 </div>
                                 <div className='span2'></div>
