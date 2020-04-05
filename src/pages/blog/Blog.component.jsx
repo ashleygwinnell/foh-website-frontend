@@ -53,7 +53,7 @@ class Blog extends React.Component {
 									{!this.props.loading &&
 									<ul>
 										{this.props.pressReleases.map((p)=>{
-								    		return <li key={p.file}><a href={p.file}>{p.title}</a></li>
+								    		return <li key={p.file}><a href={p.file} target="new">{p.title}</a></li>
 								    	})}
     								</ul>}
 									<br/>
