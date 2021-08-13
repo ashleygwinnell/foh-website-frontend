@@ -10,17 +10,17 @@ class About extends React.Component {
 							<div className='span6 my-container'>
 								<div className='span4'>
 									<h1 className='plain'>About</h1>
-									<p className='b'>Force Of Habit is a tiny, experiment-driven, independent games studio based in Bristol, directed by Ashley Gwinnell.</p>
+									<p className='b'>Force Of Habit was a tiny, experiment-driven, independent games studio based in Bristol, founded by Ashley Gwinnell and Nick Dymond.</p>
 
-									<p className='about'>Things we love:</p>
+									<p className='about'>Things we loved:</p>
 									<ul className='myul'>
-										<li className='about'>Experiments with game mechanics</li>
+										<li className='about'>Experimenting with game mechanics</li>
 										<li className='about'>Super-slick tweens &amp; game feel</li>
 										<li className='about'>All things unusual &amp; interesting: demoscene / shaders / visual effects / art styles</li>
 									</ul>
 
-									<p className='about'>We specialise in the things we love, but also rapid prototyping, native development and web game projects.</p>
-									<p className='about'>Interested in work for hire? <a href='/contact/'>Get in touch!</a></p>
+									<p className='about'>We specialised in the things we loved, but also rapid prototyping, native development and web game projects.</p>
+									<p className='about'>Interested in work for hire? You're too late.<br/><br/> If you want to leave a nice message about what our games meant to you, <a href='/contact/'>your best bet is Twitter</a>!</p>
 								</div>
 								<div className='span2'>
 
