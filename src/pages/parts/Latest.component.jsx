@@ -17,8 +17,10 @@ class Latest extends React.Component {
 		const now = new Date().toUTCString();
 		this.state = {
 			tweets: [{
-				date: now,
-				text: "Loading..."
+				// date: now,
+				// text: "Loading..."
+				date: new Date(2021, 4).toUTCString(),
+				text: "Our Twitter account was compromised by a third party and then suspended by Twitter. Sorry!<br/><br/>Tweets continue over at <a href='https://twitter.com/ashleygwinnell' target='new'>@ashleygwinnell</a>." // Nothing we can do about it -- immensely sad times.
 			}],
 			blog: {
 				date: now,
@@ -34,13 +36,13 @@ class Latest extends React.Component {
             this.props.history.push(href);
         });
 
-		APIHelper.request('/api/tweets')
-				.then((response) => {
-					this.setState({
-						tweets: response.data
-					})
-				})
-				.catch((error) => { });
+		// APIHelper.request('/api/tweets')
+		// 		.then((response) => {
+		// 			this.setState({
+		// 				tweets: response.data
+		// 			})
+		// 		})
+		// 		.catch((error) => { });
 
 	    APIHelper.request('/api/blog/latest')
 			.then((response) => {
@@ -57,7 +59,7 @@ class Latest extends React.Component {
 
 	}
 	componentWillUnmount() {
-		APIHelper.cancel('/api/tweets')
+		// APIHelper.cancel('/api/tweets')
 		APIHelper.cancel('/api/blog/latest')
 	}
 	twitterDate(d) {
@@ -90,7 +92,7 @@ class Latest extends React.Component {
 							<div className='span6 my-container'>
 								<div className='span5'>
 									<div className='tweet-icon'>
-										<a href='http://twitter.com/forcehabit' target='new'>@forcehabit</a>
+										<a href='http://twitter.com/ashleygwinnell' target='new'>@ashleygwinnell</a>
 									</div>
 
 									<div id='tweet-data-container'>

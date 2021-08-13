@@ -14,12 +14,22 @@ class Banner extends React.Component {
 			{
 				text: "Neon Caves out now on <a href='https://www.nintendo.co.uk/Games/Nintendo-Switch-download-software/Neon-Caves-1528050.html' target='new'>Nintendo Switch</a>!"
 			},
+			// {
+			// 	text: "Neon Caves out now on <a href='https://www.nintendo.co.uk/Games/Nintendo-Switch-download-software/Neon-Caves-1528050.html' target='new'>Nintendo Switch</a>!"
+			// },
 			{
 				text: "Toast Time: Smash Up! out now on <a href='https://www.nintendo.com/games/detail/toast-time-smash-up-switch/' target='new'>Nintendo Switch</a>!"
 			},
 			{
-				text: "An experiment-driven indie games studio!"
-			}
+				text: "An experiment-driven indie games studio!!"
+			},
+			// {
+				// text: "Force Of Habit is an experiment-driven indie games studio!"
+				// text: "Force Of Habit was an experiment-driven indie games studio! 2012 - 2020"
+			// }
+			// {
+			// 	text: "We are sorry to say that Force Of Habit is no more."
+			// }
 		];
 
 		this.interval = setInterval(()=>{
